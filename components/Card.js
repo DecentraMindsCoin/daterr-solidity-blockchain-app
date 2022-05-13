@@ -6,7 +6,7 @@ import CardFooter from './CardFooter'
 import DaterrCardItem from './DaterrCardItem'
 
 const style = {
-  wrapper: `h-[45rem] w-[27rem] flex flex-col rounded-lg overflow-hidden`,
+  wrapper: `h-[45rem] w-[27rem] flex flex-col rounded-lg overflow-hidden absolute top-1/3`,
   cardMain: `w-full flex-1 relative flex flex-col justify-center items-center bg-gray-500`,
   noMoreWrapper: `flex flex-col justify-center items-center absolute`,
   daterrLogo: `text-5xl text-red-500 mb-4`,
