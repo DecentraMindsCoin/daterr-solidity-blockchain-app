@@ -14,11 +14,11 @@ const style = {
   accountAddress: `ml-2`,
   authButton: `bg-white font-bold text-red-500 px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white`,
 }
-const currentAccount = "0x1B3F5bc01c0B9F43632E6A4D3B2e3f9BCEaA825a"
+// const currentAccount = "0x1B3F5bc01c0B9F43632E6A4D3B2e3f9BCEaA825a"
 
 const Header = () => {
-//   const { connectWallet, currentAccount, disconnectWallet } =
-//     useContext(DaterrContext)
+  const { connectWallet, currentAccount, disconnectWallet } =
+    useContext(DaterrContext)
 
     return (
         <div

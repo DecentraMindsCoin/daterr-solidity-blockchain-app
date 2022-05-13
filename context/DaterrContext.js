@@ -2,8 +2,9 @@ import { useState, createContext, useEffect } from 'react'
 import { useMoralis } from 'react-moralis'
 import { faker } from '@faker-js/faker'
 
+//Declare variable that will be equal to context
 export const DaterrContext = createContext()
-
+// Setup Provider
 export const DaterrProvider = ({ children }) => {
   const { authenticate, isAuthenticated, user, Moralis } = useMoralis()
   const [cardsData, setCardsData] = useState([])

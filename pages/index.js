@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Card from '../components/Card'
 import Header from '../components/Header'
 
 const style = {
   wrapper: `h-screen w-screen flex flex-col bg-[#222229]`,
-  cardsContainer: `flex flex-col items-center justify-center`
-} 
+  cardsContainer: `flex flex-col items-center justify-center`,
+}
 
 const Home = () => {
   return (
@@ -17,7 +18,10 @@ const Home = () => {
 
       <div className={style.wrapper}>
         <Header />
-        <div className={style.cardsContainer}>{/* Card */}</div>
+        <div className={style.cardsContainer}>
+          {' '}
+          <Card />
+        </div>
       </div>
     </div>
   )
