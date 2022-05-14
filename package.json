@@ -16,12 +16,14 @@
     "ethers": "^5.6.5",
     "magic-sdk": "^8.1.1",
     "moralis": "^1.7.0",
-    "next": "latest",
+    "next": "^12.0.0 ",
+    "pwa": "^1.9.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-moralis": "^1.3.5",
     "react-tinder-card": "^1.4.5",
+    "sharp": "^0.30.4",
     "web3modal": "^1.9.7"
   },
   "devDependencies": {

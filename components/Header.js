@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import fire from '../assets/fire.png'
 import { useContext, useState } from 'react'
 import Link from 'next/link'
 import { DaterrContext } from '../context/DaterrContext'
@@ -12,7 +11,7 @@ const style = {
   leftMenu: `flex text-lg`,
   menuItem: `cursor-pointer hover:text-red-400 duration-300 hover:scale-110`,
   rightMenu: `items-center  relative my-auto`,
-  currentAccount: `lg:absolute lg:right-5 px-2 my-auto py-3 border-2 border-white bg-black px-4 rounded-full items-center`,
+  currentAccount: `lg:absolute lg:right-5 px-2 my-auto py-3 border-2 border-white bg-black px-4 rounded-full items-center flex`,
   accountAddress: `ml-2`,
   authButton: ` bg-black border-2 border-white items-center font-bold text-white px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white  mx-auto `,
 }
@@ -60,18 +59,17 @@ export const Header = () => {
       <div className=" z-100 relative z-20 items-center bg-purple-500 bg-opacity-0 lg:bg-opacity-50 rounded-xl pb-5  py-2 px-5 lg:flex">
         <div className=" item-center relative h-12 space-x-4 items-center flex">
           <a className="relative" href="/">
-            <div className="relative h-12 w-12 rounded-xl border-2 border-white ">
+              <div className="relative h-12 w-12 rounded-xl border-2 border-white">
               <Image
-                preload="true"
                 layout="fill"
                 objectFit="cover"
                 className="absolute cursor-pointer rounded-xl  "
                 alt="header-image"
                 src="/favicon.ico"
-              />
+              />  <Image src="/favicon.ico" width={40} height={40} />
+
             </div>
-          </a>
-          <h1 className="text-white">D8rr</h1>
+          </a>       
         </div>
 
         <button

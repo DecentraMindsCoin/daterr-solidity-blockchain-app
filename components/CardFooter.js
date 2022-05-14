@@ -1,7 +1,7 @@
 
    
 import Image from 'next/image'
-import fire from '../assets/app_logo.png'
+import logo from '../assets/app-logo.png'
 import { FaSearch } from 'react-icons/fa'
 import { GiDiamonds } from 'react-icons/gi'
 import { TiMessages } from 'react-icons/ti'
@@ -16,7 +16,7 @@ const CardFooter = () => {
   return (
     <div className={style.wrapper}>
       <Image
-        src={fire}
+        src={logo}
         height={35}
         width={35}
         alt='fire-logo'

@@ -1,9 +1,10 @@
 import { useContext } from 'react'
 import { DaterrContext } from '../context/DaterrContext'
-import { SiTinder } from 'react-icons/si'
+import logo from '../assets/app-logo.png'
 import CardHeader from './CardHeader'
 import CardFooter from './CardFooter'
 import DaterrCardItem from './DaterrCardItem'
+import Image from 'next/image'
 
 const style = {
   wrapper: ` flex flex-col rounded-lg overflow-hidden absolute top-1/3 w-full h-2/3  pb-32 `,
@@ -24,7 +25,7 @@ const Card = () => {
       <CardHeader />
       <div className={style.cardMain}>
         <div className={style.noMoreWrapper}>
-          <SiTinder className={style.daterrLogo} />
+       <Image  src={logo} width={40} height={40} />
           <div className={style.noMoreText}>
             No More Profiles in your Location...
           </div>
