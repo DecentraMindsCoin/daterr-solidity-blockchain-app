@@ -6,19 +6,21 @@ import CardFooter from './CardFooter'
 import DaterrCardItem from './DaterrCardItem'
 
 const style = {
-  wrapper: `h-[45rem] w-[27rem] flex flex-col rounded-lg overflow-hidden absolute top-1/3`,
-  cardMain: `w-full flex-1 relative flex flex-col justify-center items-center bg-gray-500`,
+  wrapper: ` flex flex-col rounded-lg overflow-hidden absolute top-1/3 w-full h-2/3  pb-32 `,
+  cardMain: `h-full w-full flex-1 relative flex flex-col justify-center items-center bg-gray-500 shadow-xl shadow-cyan-300 `,
   noMoreWrapper: `flex flex-col justify-center items-center absolute`,
   daterrLogo: `text-5xl text-red-500 mb-4`,
   noMoreText: `text-xl text-white`,
-  swipesContainer: `w-full h-full overflow-hidden`,
-}
+  swipesContainer: `w-full h-full overflow-hidden shadow-xl shadow-cyan-300`,
 
+  
+}
 const Card = () => {
   const { cardsData } = useContext(DaterrContext)
 
   return (
     <div className={style.wrapper}>
+     
       <CardHeader />
       <div className={style.cardMain}>
         <div className={style.noMoreWrapper}>

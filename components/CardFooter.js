@@ -1,7 +1,7 @@
 
    
 import Image from 'next/image'
-import fire from '../assets/fire.png'
+import fire from '../assets/app_logo.png'
 import { FaSearch } from 'react-icons/fa'
 import { GiDiamonds } from 'react-icons/gi'
 import { TiMessages } from 'react-icons/ti'
