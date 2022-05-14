@@ -25,6 +25,7 @@
     "web3modal": "^1.9.7"
   },
   "devDependencies": {
+    "@types/react": "^18.0.9",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",

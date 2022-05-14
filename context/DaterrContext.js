@@ -47,12 +47,14 @@ export const DaterrProvider = ({ children }) => {
     setCurrentAccount('')
   }
 
+
+  //Swipe right state if usser is liked save that current user 
   const handleRightSwipe = async (cardData, currentUserAddress) => {
     const likeData = {
       likedUser: cardData.walletAddress,
       currentUser: currentUserAddress,
     }
-
+// fetch the api route to saveLike into sanity
     try {
       await fetch('/api/saveLike', {
         method: 'POST',
@@ -61,7 +63,7 @@ export const DaterrProvider = ({ children }) => {
         },
         body: JSON.stringify(likeData),
       })
-
+// Post it using reponse to checkMatches, check if user they liked also likes them back.
       const response = await fetch('/api/checkMatches', {
         method: 'POST',
         headers: {
@@ -69,11 +71,11 @@ export const DaterrProvider = ({ children }) => {
         },
         body: JSON.stringify(likeData),
       })
-
+// Set data to a JSON
       const responseData = await response.json()
-
+// variable defining "Matched == users liked eachother == feeling is mutual"
       const matchStatus = responseData.data.isMatch
-
+console.log(matchStatus)
       if (matchStatus) {
         console.log('match')
 

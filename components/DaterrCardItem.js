@@ -1,6 +1,6 @@
 
    
-import { useState, useContext } from 'react'
+import {  useContext } from 'react'
 import { DaterrContext } from '../context/DaterrContext'
 import { FaUndoAlt } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -23,7 +23,7 @@ const style = {
   starColors: `border-blue-400 text-blue-400`,
   lightningColors: `border-purple-500 text-purple-500`,
 }
-
+// Swipe right == match functionality.
 const DaterrCardItem = ({ card }) => {
   const { handleRightSwipe, currentAccount } = useContext(DaterrContext)
 
@@ -49,6 +49,7 @@ const DaterrCardItem = ({ card }) => {
             <span className={style.age}>{card.age}</span>
           </div>
         </div>
+        {/* Card Metamask wallet address of dummy data card slice for shortened styling*/}
         <div className={style.walletAddress}>
           {card.walletAddress.slice(0, 6)}...{card.walletAddress.slice(39)}
         </div>
