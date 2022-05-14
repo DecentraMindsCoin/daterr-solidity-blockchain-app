@@ -9,8 +9,8 @@ const style = {
   main: `flex items-center  justify-between`,
   daterrText: `text-5xl font-semibold mr-8 cursor-pointer`,
   leftMenu: `flex text-lg`,
-  menuItem: `cursor-pointer hover:text-red-400 duration-300 hover:scale-110`,
-  rightMenu: `items-center  relative my-auto`,
+  menuItem: `cursor-pointer hover:text-red-400 duration-300 `,
+  rightMenu: `items-center  relative`,
   currentAccount: `lg:absolute lg:right-5 px-2 my-auto py-3 border-2 border-white bg-black px-4 rounded-full items-center flex`,
   accountAddress: `ml-2`,
   authButton: ` bg-black border-2 border-white items-center font-bold text-white px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white  mx-auto `,
@@ -66,7 +66,7 @@ export const Header = () => {
                 className="absolute cursor-pointer rounded-xl  "
                 alt="header-image"
                 src="/favicon.ico"
-              />  <Image src="/favicon.ico" width={40} height={40} />
+              />  
 
             </div>
           </a>       
@@ -95,6 +95,7 @@ export const Header = () => {
      
           {currentAccount ? (
             <>
+
 
            
               <div className={style.currentAccount}>
