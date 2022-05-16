@@ -2,9 +2,10 @@ import Image from 'next/image'
 import { useContext, useState } from 'react'
 import Link from 'next/link'
 import { DaterrContext } from '../context/DaterrContext'
-import { AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { AiFillStar } from 'react-icons/ai'
 import { BsFillLightningChargeFill } from 'react-icons/bs'
+
 const style = {
   main: `flex items-center  justify-between`,
   daterrText: `text-5xl font-semibold mr-8 cursor-pointer`,
@@ -77,11 +78,11 @@ export const Header = () => {
           className="hover:bg-filter-image-1 absolute right-5 top-3 h-10 w-10 transform rounded border-2 border-white bg-purple-500 text-gray-200 outline-none transition duration-200 ease-in-out hover:text-gray-200   active:bg-white lg:hidden"
           onClick={handleClick}
         >
-          <div className={`${active ? 'hidden' : 'block'} mx-2.5 `}>
-            <AiOutlineClose />
+          <div className={`${active ? 'hidden' : 'block'} mx-2.5`}>
+            <AiOutlineMenu />
           </div>
-          <div className={`${active ? 'animate-spin' : 'hidden'}  mx-2.5 `}>
-            <AiFillStar />
+          <div className={`${active ? '' : 'hidden'}  mx-2.5 `}>
+            <AiOutlineClose />
           </div>
         </button>
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
